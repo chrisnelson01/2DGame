@@ -12,8 +12,6 @@ public class ObstacleSpawn : MonoBehaviour
     Vector2 pos;
     private Vector2 screenBounds;
 
-    Collider2D checkCollider;
-    public LayerMask filterMask;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,17 +22,9 @@ public class ObstacleSpawn : MonoBehaviour
             screenX = Random.Range(-screenBounds.x, screenBounds.x);
             screenY = Random.Range(-screenBounds.y, screenBounds.y);
             toSpawn.transform.rotation = Random.rotation;
-    
             pos = new Vector2(screenX, screenY);
-
             toSpawn.transform.rotation = Quaternion.Euler(0.0f, 0.0f, obstacleAngles[Random.Range(0,9)]);
             GameObject newObstacle = Instantiate(toSpawn, pos, toSpawn.transform.rotation);
-            checkCollider = Physics2D.OverlapBox(transform.position, transform.localScale ,filterMask);
-            if(checkCollider != null && checkCollider.transform !=transform)
-            {
-                Destroy(newObstacle);
-                i--;
-            }
         }
     }
 
