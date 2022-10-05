@@ -6,13 +6,13 @@ public class P1Health : MonoBehaviour
 {
     public float MAX_HEALTH = 100;
     public float currHealth;
-    GameObject gameManager;
+    //GameObject gameManager;
     public GameObject P1HealthBar;
     
     // Start is called before the first frame update
     void Start()
     {
-        gameManager = GameObject.FindGameObjectWithTag("Game Manager");
+        //gameManager = GameObject.FindGameObjectWithTag("Game Manager");
         currHealth = MAX_HEALTH;
     }
 
@@ -27,8 +27,9 @@ public class P1Health : MonoBehaviour
         if(collision.gameObject.tag == "Weapon")
         {
             currHealth -= 10;
-            if (currHealth <= 0.0f)
-                gameManager.SendMessage("GotoGameOver");
+            if (currHealth <= 0.0f){
+                //gameManager.SendMessage("GotoGameOver");
+            }
         }
     }
 }

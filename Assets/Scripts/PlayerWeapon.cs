@@ -7,8 +7,7 @@ public class PlayerWeapon : MonoBehaviour
     public Sprite PlayerWithNinjaStar;
     public Sprite PlayerWithSword;
     public Sprite PlayerWithGun;
-
-    public GameObject currentWeapon;
+    private GameObject currentWeapon;
     private void Start() {
         currentWeapon = null;
     }
@@ -25,6 +24,10 @@ public class PlayerWeapon : MonoBehaviour
             GetComponent<SpriteRenderer>().sprite = PlayerWithGun;
         }
         currentWeapon = weapon;
+    }
+    public GameObject getWeapon()
+    {
+        return currentWeapon;
     }
 
 }
