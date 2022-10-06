@@ -5,8 +5,7 @@ using UnityEngine;
 public class PlayerWeapon : MonoBehaviour
 {
     public GameObject currentWeapon;
-    public Animator animator;
-
+    
     void Start() {
         currentWeapon = null;
     }
