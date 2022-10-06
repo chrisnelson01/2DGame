@@ -411,7 +411,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1321394385}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: firePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -474,7 +474,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1328500887}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.48147556}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -491,13 +491,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1465313942}
   - component: {fileID: 1465313941}
-  - component: {fileID: 1465313948}
-  - component: {fileID: 1465313940}
   - component: {fileID: 1465313944}
-  - component: {fileID: 1465313943}
   - component: {fileID: 1465313945}
   - component: {fileID: 1465313947}
-  m_Layer: 0
+  - component: {fileID: 1465313940}
+  - component: {fileID: 1465313943}
+  - component: {fileID: 1465313948}
+  m_Layer: 3
   m_Name: p1
   m_TagString: Player
   m_Icon: {fileID: 0}

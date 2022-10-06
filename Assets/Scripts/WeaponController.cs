@@ -12,7 +12,6 @@ public class WeaponController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision) 
     {
-        StartCoroutine(Wait());
         if(collision.tag == "Player")
         {
             if(collision.GetComponent<PlayerWeapon>().getWeapon() != null)
