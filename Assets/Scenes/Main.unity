@@ -1169,7 +1169,7 @@ GameObject:
   - component: {fileID: 1952511427}
   - component: {fileID: 1952511426}
   m_Layer: 5
-  m_Name: imgP1Health (1)
+  m_Name: imgP2Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
