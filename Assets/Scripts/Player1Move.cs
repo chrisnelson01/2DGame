@@ -41,6 +41,7 @@ public class Player1Move : MonoBehaviour
         if(Input.GetKey("w"))
         {    
             dirY = moveSpeed;
+
         }
         if(Input.GetKey("a"))
         {

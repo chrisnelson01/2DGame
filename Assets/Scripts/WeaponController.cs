@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class WeaponController : MonoBehaviour
 {
+    private AudioSource audioSource;
     private void Start() {
-
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
     IEnumerator Wait(){
          yield return new WaitForSeconds(5);
     }
     private void OnTriggerEnter2D(Collider2D collision) 
     {
+        audioSource.Play();
         if(collision.tag == "Player")
         {
             if(collision.GetComponent<PlayerWeapon>().getWeapon() != null)
